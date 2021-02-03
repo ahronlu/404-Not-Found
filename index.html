@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>404 Not Found</title>
+
+    <style>
+      body {
+        font-family: 'Space Mono', monospace;
+      }
+
+      .show-on-mobile {
+        display: none;
+      }
+
+      .hide-on-mobile {
+        display: block;
+      }
+
+      .not-found {
+        position: absolute;
+        top: 40px;
+        left: 77px;
+        font-family: Inconsolata;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase
+      }
+
+      .container {
+        justify-content: space-between;
+        width: 90vw;
+        margin: 0 auto;
+        padding-top: 15vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .img-wrapper img {
+        width: 100%;
+      }
+
+      .img-wrapper {
+        width: 40vw;
+      }
+
+      .text-wrapper {
+        width: 40vw;
+      }
+
+      .text-wrapper h1 {
+        color: #333333;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        text-align: left;
+      }
+
+      .text-wrapper p {
+        color: #4f4f4f;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        text-align: left;
+      }
+
+      .text-wrapper button {
+        background-color: #333333;
+        color: white;
+        font-family: 'Space Mono', monospace;
+        padding: .5vw 1vw;
+        border: none;
+        font-family: Space Mono;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        width: 216px;
+        height: 68px;
+      }
+
+      .credit {
+        margin-top: 10vh;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .show-on-mobile {
+          display: block;
+        }
+
+        .hide-on-mobile {
+          display: none;
+        }
+
+        .not-found {
+          top: 1vw;
+          left: 3vw;
+          font-size: 6vw;
+        }
+
+        .container {
+          padding-top: 10vh;
+          flex-direction: column;
+        }
+
+        .text-wrapper {
+          width: 90vw;
+        }
+
+        .img-wrapper {
+          width: 70vw;
+        }
+
+        .text-wrapper h1 {
+          font-size: 10vw;
+        }
+
+        .text-wrapper p {
+          font-size: 5vw;
+        }
+
+        .credit {
+          font-size: 3vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="not-found">
+      404 NOT FOUND
+    </p>
+    <div class="container">
+        <div class="img-wrapper">
+          <img src="Scarecrow.png"/>
+        </div>
+        <div class="text-wrapper">  
+          <h1>
+            I have bad <br class="show-on-mobile"/> news <br class="hide-on-mobile"/>for you
+          </h1>
+          <p>The page you are looking for <br class="hide-on-mobile"/> might be removed or is <br class="hide-on-mobile"/> temporarily unavailable</p>
+          <button>BACK TO HOMEPAGE</button>
+        </div>
+    </div>
+    <p class="credit">Aharon Lubitsch @ DevChallenges.io</p>
+  </body>
+</html>
